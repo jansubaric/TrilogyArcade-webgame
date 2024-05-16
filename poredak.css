@@ -1,0 +1,40 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+table{
+	border-style: 1px solid white;
+}
+
+.btn{
+	background: #F1C40F;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+
+	margin-top: -25px;
+	padding: 5px;
+
+	text-transform: uppercase;
+	width: auto;
+}
+
+.btn:hover,
+.btn:focus{
+	background-color: #3f3f3f;
+}
+
+.btn:active{
+	transform: translateY(5px);
+}

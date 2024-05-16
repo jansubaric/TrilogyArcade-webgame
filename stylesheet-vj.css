@@ -1,0 +1,258 @@
+body {
+    /*font-family: "Arial", sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: black;
+}
+
+.pogodi{
+    text-align: center;
+    width: calc(40% - 10px);
+    margin-left: 30%;
+    padding-bottom: 7px;
+    border: 5px solid white;
+    background-color: pink;
+}
+
+div{
+    text-align: center;
+}
+
+/*
+.rozo{
+    background-color:pink;
+    color: black;
+}*/
+.yt{
+  background: #76448A;
+  border-bottom: 6px inset rgba(0,0,0,.5);
+  border-left: 6px inset rgba(0,0,0,.5);
+  border-right: 6px inset rgba(255,255,255,.5);
+  border-top: 6px inset rgba(255,255,255,.5);
+  box-sizing: border-box;
+
+  /* position: absolute; */
+  /* margin-right: 15px;
+  /*float: right;
+  top: 25%;
+  right: 1%;*/
+
+  color: white;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 30px;
+
+ /* margin-top: -25px;
+  padding: 5px; */
+
+  text-transform: uppercase;
+  /* width: auto; */
+}
+
+.yt:hover,
+.yt:focus{
+  background-color: #3f3f3f;
+}
+
+.yt:active{
+  transform: translateY(5px);
+}
+.sredina{
+    text-align : center;
+}
+
+.game-body{
+    /*color: white;*/
+    background-color: #00fdcb;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+/* Dropdown gumb */
+.dropbtn {
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    background-color: #864aff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+/*container za dd */
+.dropdown {
+    float: left;
+    position: relative;
+    display: none;
+  }
+  
+  /*sav sadržaj dd*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #aeacff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /*linkovi u dd*/
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {
+    background-color: rgb(96, 223, 216);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color:c;
+} 
+  
+.logo-image{
+    width: 80%;
+    border-radius: 20%;
+    margin-bottom: 10%;
+    top: 2%;
+    left: 2%;
+    position: relative;
+      /*margin-top: 35%; /*na kolikom god ekranu igra, vidi gif i izbornik*/
+}
+  
+.bottom-image{
+    width: 80%;
+    margin-top: 30px;
+    /*margin-bottom: 1s5%;
+    position: absolute;*/
+}
+  
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #864aff;
+    overflow-x: hidden;
+    /*padding-top: 2%;*/
+    margin-top: 0;
+    /*padding-top: 70px;*/
+    padding-bottom: 15%;
+}
+  
+.sidenav ul{
+    list-style-type: none;
+    margin-top: 70%;
+    float: left;
+    text-align: center;
+    position: relative;
+    padding-top:10%;
+}
+    
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+    
+.sidenav a:hover {
+    color: white;
+    background-color: #632dce;
+}
+
+.glavni{
+    font-size: 50px;
+    font-weight: lighter;
+    font-style: italic;
+    text-transform: uppercase;
+    /*height: 140px;*/
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    line-height: 60px;
+    overflow-wrap: break-word;
+    clear: left;
+    overflow-y: inherit;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 50px;
+    top: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
+    /*background-color:  rgb(11, 243, 231);*/
+    color: black;
+    background-color: #00fdcb;
+}
+
+.oglasi{
+    height: 100%;
+    width: 18%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #6084fa;
+    overflow-x: hidden;
+    padding-bottom: 15%;
+}
+
+.oglasi-cont{
+    padding-top: 28vh;
+}
+
+#sl1, #sl2{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+    border-radius: 10%;
+}
+
+.footer {
+    position: fixed;
+    /*left: 0;*/
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(52, 255, 255);
+    color: rgb(87, 0, 185);
+    text-align: center;
+}
+
+@media (max-width: 960px){
+    nav ul{
+      display: none;
+    }
+
+    .dropdown{
+      display: block;
+    }
+
+    .oglasi{
+      display: none;
+    }
+
+    #mobile{
+      display: block;
+    }
+
+    .vj-img{
+        width: 100px;
+    }
+}
+

@@ -1,0 +1,99 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: black;
+    color:white;
+}
+
+.wrap{
+	background-color: rgb(87, 0, 185); 
+}
+
+
+.wrap{
+  width: 600px;
+  margin: auto;
+  border: 3px solid black;
+  color: white;
+  text-align: center;
+}
+
+h1{
+	background-color: rgb(87, 0, 185);
+	color: white;
+}
+
+
+.admin{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	padding: 10px;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.admin:hover{
+	color: white;
+}
+
+.login,
+.signup{
+	width: 400px;
+	margin-left: 100px;
+	background-color: pink;
+	border: 3px solid black;
+	text-align: center;
+}
+
+.login{
+	background: url(images/loginbg.png);
+}
+
+.signup{
+	background: url(images/regbg.png);
+	height: 400px;
+	margin-bottom: 100px;
+}
+
+@media(max-width: 600px){
+	.wrap{
+		width: 100%;
+	}
+
+	.login, .signup{
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media(max-width: 950px){
+
+	.login{
+		margin-top: 70px;
+	}
+
+	.admin{
+		margin-left: 20%;
+}
+
+#subm{
+	background-color: blue;
+	color: white;
+}
+
+#subm:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(52, 255, 255);
+    color: rgb(87, 0, 185);
+    text-align: center;
+}

@@ -1,0 +1,228 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: black;
+}
+.yt{
+  background: #76448A;
+  border-bottom: 6px inset rgba(0,0,0,.5);
+  border-left: 6px inset rgba(0,0,0,.5);
+  border-right: 6px inset rgba(255,255,255,.5);
+  border-top: 6px inset rgba(255,255,255,.5);
+  box-sizing: border-box;
+
+  /* position: absolute; */
+  /* margin-right: 15px;
+  /*float: right;
+  top: 25%;
+  right: 1%;*/
+
+  color: white;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-size: 30px;
+
+ /* margin-top: -25px;
+  padding: 5px; */
+
+  text-transform: uppercase;
+  /* width: auto; */
+}
+
+.yt:hover,
+.yt:focus{
+  background-color: #3f3f3f;
+}
+
+.yt:active{
+  transform: translateY(5px);
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #00fdcb;
+
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+
+    width: 100%;
+    height: 100px;
+  }
+  
+.navbar a {
+    float: left;
+    display: block;
+    /*color: #f2f2f2;*/
+    text-align: center;
+    margin-top: 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navbar #logo-image{
+    float: left;
+    height: 100%;
+    margin-right: 25px;
+}
+  
+.navbar a:hover {
+    background: rgb(80, 191, 255);
+    opacity: 0.8;
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* dd content ide iza slajdova iskopat ću si oči
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 30;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+*/
+
+.slide{
+    position: relative;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 10px solid blueviolet;
+}
+
+
+    /*OVU DUGMAD TREBA CENTRIRATI!!*/
+.left-button{
+    position: relative;
+    margin-top: 20px;
+    left:47%;
+    transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
+}
+
+.right-button{
+    position: relative;
+    margin-top: 20px;
+    left:48%;
+    transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)
+}
+
+button:active {
+    box-shadow: 0 5px white;
+    transform: translateY(4px);
+}
+
+.row {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.text {
+    color: black;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.overlay {
+    position: relative;
+    bottom:100%;
+    left: 0;
+    right: 0;
+    background-color: #00fdcb;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.column {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    flex: 23%;
+    padding: 5px;
+    transition: .5s ease;
+    border: 3px solid blueviolet;
+}
+
+.column:hover .overlay {
+    height: 100%;
+}
+
+.footer {
+    position: fixed;
+    /*left: 0;*/
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(52, 255, 255);
+    color: rgb(87, 0, 185);
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .row{
+        display: list-item;
+    }   
+}
+  
